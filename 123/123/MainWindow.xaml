@@ -1,0 +1,27 @@
+﻿<Window x:Class="_123.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_123"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="360" Width="525" Background="Gray">
+    <Grid>
+        <TextBlock Width="30" Height="40" Margin="20,149,467,140" FontSize="28">A</TextBlock>
+        <TextBlock Width="30" Height="40" Margin="287,149,200,140" FontSize="28">B</TextBlock>
+        <TextBlock Width="30" Height="40" Margin="20,209,467,80" FontSize="28">C</TextBlock>
+        <TextBlock Width="30" Height="40" Margin="287,209,200,80" FontSize="28">D</TextBlock>
+        <TextBlock Width="30" Height="40" Margin="20,269,467,20" FontSize="28">E</TextBlock>
+        <TextBlock Width="30" Height="40" Margin="287,269,200,20" FontSize="28">F</TextBlock>
+        <TextBlock Width="120" Height="20" Margin="347,309,50,0" FontSize="12" VerticalAlignment="Top">可自行填入 修改</TextBlock>
+        <TextBox x:Name="A" Width="150" Height="40" Margin="50,149,317,140" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" TextChanged="TextBox_TextChanged" Text="泡麵" />
+        <TextBox x:Name="B" Width="150" Height="40" Margin="317,149,50,140" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26">飯糰</TextBox>
+        <TextBox x:Name="C" Width="150" Height="40" Margin="50,209,317,80" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26">麵包</TextBox>
+        <TextBox x:Name="D" Width="150" Height="40" Margin="317,209,50,80" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26">自助餐</TextBox>
+        <TextBox x:Name="F" Width="150" Height="40" Margin="317,269,50,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" Text="再一次"></TextBox>
+        <TextBox x:Name="E" Width="150" Height="40" Margin="50,269,317,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" Text="再一次"></TextBox>
+        <Button Width="150" Height="40" Margin="50,50,317,239" FontSize="24" Click="Button_Click" >下一餐決定</Button>
+        <TextBlock Width="50" Height="50" Margin="220,40,240,230" FontSize="38" HorizontalAlignment="Center" VerticalAlignment="Center" >吃</TextBlock>
+        <TextBox x:Name="END"  Width="160" Height="50" Margin="307,50,50,229" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="28" IsReadOnly="True"></TextBox>
+    </Grid>
+</Window>
